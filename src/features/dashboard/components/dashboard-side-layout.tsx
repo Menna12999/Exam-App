@@ -6,6 +6,7 @@ import logo from "@/assets/images/logo.png";
 import NavLinks from "./navlinks";
 import UserMenu from "./user-menu";
 import { getTranslations } from "next-intl/server";
+import LanguageSwitcher from "@/shared/components/language-switcher";
 
 export default async function DashboardSideLayout() {
   // Translation
@@ -25,6 +26,8 @@ export default async function DashboardSideLayout() {
           <span className="text-xl font-semibold text-blue-600">
             {t("app-name")}
           </span>
+          {/*language switcher*/}
+          <LanguageSwitcher className="ms-auto" />
         </header>
         <NavLinks />
       </div>
@@ -38,7 +41,9 @@ export default async function DashboardSideLayout() {
             height={54}
             alt={user.firstName ?? t("user-avatar")}
             className={`size-13.5 shrink-0 border border-blue-500 ${
-              user.profilePhoto ? "object-cover" : "object-contain p-1 bg-gray-800"
+              user.profilePhoto
+                ? "object-cover"
+                : "object-contain p-1 bg-gray-800"
             }`}
           />
           <div className="flex flex-col">

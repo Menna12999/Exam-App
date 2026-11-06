@@ -1,3 +1,4 @@
+import LanguageSwitcher from "@/shared/components/language-switcher";
 import { cn } from "@/shared/lib/utils/tailwind-merge";
 import {
   BookOpenCheck,
@@ -41,7 +42,9 @@ export default function AuthSideLayout() {
           {/*logo*/}
           <FolderCode className="size-8" />
           {/*title*/}
-          Exam App
+          Exam App 
+          {/*language switcher*/}
+          <LanguageSwitcher className="ms-auto"/>
         </header>
 
         {/*content*/}
