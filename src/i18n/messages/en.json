@@ -112,5 +112,23 @@
     "scroll-more": "Scroll more",
     "end-of-list": "End of list",
     "error": "An error occurred while loading diplomas"
+  },
+  "side": {
+    "app-name":"Exam App",
+    "headline": "Empower your learning journey with our smart exam platform.",
+    "features": {
+      "diplomas": {
+        "title": "Tailored Diplomas",
+        "description": "Choose from specialized tracks like Frontend, Backend, and Mobile Development."
+      },
+      "exams": {
+        "title": "Focused Exams",
+        "description": "Access topic-specific tests including HTML, CSS, JavaScript, and more."
+      },
+      "forms": {
+        "title": "Smart Multi-Step Forms",
+        "description": "Complete your registration and verification through simple guided steps."
+      }
+    }
   }
 }
